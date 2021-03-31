@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="1207.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.GUI.PostsFRONTController">
+   <children>
+      <Button fx:id="ViewP" layoutX="364.0" layoutY="380.0" mnemonicParsing="false" onAction="#ViewP" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="   View" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="241.0" fitWidth="486.0" layoutX="620.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/back3louta.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="656.0" prefWidth="158.0" style="-fx-background-color: #535355;" />
+      <ImageView fitHeight="204.0" fitWidth="268.0" layoutX="1020.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/faza.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="251.0" fitWidth="452.0" layoutX="158.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/back2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Btn_Ajout" layoutX="984.0" layoutY="114.0" mnemonicParsing="false" onAction="#AjouterP" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="   Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button fx:id="BtnMod" layoutX="984.0" layoutY="156.0" mnemonicParsing="false" onAction="#ModifierP" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="        Modify" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button fx:id="Btn_Delete" layoutX="984.0" layoutY="198.0" mnemonicParsing="false" onAction="#SupprimerP" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="       Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <ComboBox fx:id="Btn_Sort" layoutX="773.0" layoutY="240.0" onAction="#Trier" prefHeight="29.0" prefWidth="140.0" promptText="Sort  by" style="-fx-background-color: #616161; -fx-background-radius: 90;">
+         <effect>
+            <InnerShadow />
+         </effect></ComboBox>
+      <AnchorPane layoutX="156.0" prefHeight="67.0" prefWidth="1122.0" style="-fx-background-color: #535355;">
+         <children>
+            <Label layoutX="978.0" layoutY="21.0" prefHeight="27.0" prefWidth="110.0" text="Hello User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="923.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/icons8_Person_32px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="13.0" prefHeight="42.0" prefWidth="316.0" text="Blogs " textFill="#eeeaea">
+               <font>
+                  <Font name="Arial" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="76.0" fitWidth="496.0" layoutX="-30.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/aaaa.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="21.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/icons8-chevron-right-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="12.0" prefHeight="42.0" prefWidth="152.0" text="Blogs " textFill="#eeeaea">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+               <effect>
+                  <Glow>
+                     <input>
+                        <Shadow color="WHITE" height="0.0" radius="0.0" width="0.0" />
+                     </input>
+                  </Glow>
+               </effect>
+            </Label>
+            <Button fx:id="Btn_Posts" layoutX="705.0" layoutY="24.0" mnemonicParsing="false" onAction="#GoToPosts" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="        Posts " textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="155.0" layoutY="-2.0" prefHeight="656.0" prefWidth="3.0" style="-fx-background-color: #FF0000;" />
+      <Label layoutX="158.0" layoutY="85.0" prefHeight="29.0" prefWidth="110.0" style="-fx-background-color: #808080; -fx-background-radius: 90;" text="    Posts" textFill="#110b0b">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="992.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/adddd15.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="992.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/modify.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="976.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="870.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/likeez.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="14.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Home_32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="192.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="      Overview" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Home_32px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="178.0" fitWidth="152.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/ALPHA4.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="236.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="Users" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Person_32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="282.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text=" Events" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8-event-64.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="330.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #535355;" text=" Orders" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Open_Envelope_32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="382.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="    Products" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8-product-32.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="435.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="         Suggestions" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="37.0" fitWidth="29.0" layoutX="7.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Xbox_Menu_32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="481.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="152.0" style="-fx-background-color: #535355;" text="Blogs" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="6.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8-blog-32.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="525.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="    Settings" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="6.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Slider__32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="571.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="      Sign Out" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="tfContenuP" focusColor="#9e9e9e" labelFloat="true" layoutX="564.0" layoutY="174.0" prefHeight="25.0" prefWidth="196.0" promptText="Write something here " unFocusColor="BLACK" />
+      <JFXTextField fx:id="tfContenuC" focusColor="#9e9e9e" labelFloat="true" layoutX="897.0" layoutY="320.0" prefHeight="25.0" prefWidth="208.0" promptText="Write something here " unFocusColor="BLACK" />
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Sign_Out_32px.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Btn_Ajout1" layoutX="984.0" layoutY="250.0" mnemonicParsing="false" onAction="#AjouterF" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="    Share" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TextArea fx:id="addposttxt" layoutX="334.0" layoutY="262.0" prefHeight="108.0" prefWidth="85.0" />
+      <JFXListView fx:id="PostsLists" layoutX="184.0" layoutY="259.0" prefHeight="370.0" prefWidth="325.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect></JFXListView>
+      <Line endX="731.5000610351562" endY="160.0" layoutX="-184.0" layoutY="-95.0" startX="731.5000610351562" startY="744.5">
+         <effect>
+            <DropShadow height="31.26" radius="22.9425" spread="0.73" width="62.51" />
+         </effect></Line>
+      <ImageView fitHeight="169.0" fitWidth="347.0" layoutX="932.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/back3louta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="18.0" layoutX="993.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/facebookicon%20(2).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchbar" layoutX="773.0" layoutY="197.0" onAction="#search" prefHeight="27.0" prefWidth="140.0" promptText="search" style="-fx-background-color: #616161; -fx-background-radius: 90;">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <ImageView fitHeight="27.0" fitWidth="18.0" layoutX="888.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Search_52px.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="cmtview" layoutX="843.0" layoutY="345.0" prefHeight="94.0" prefWidth="316.0">
+         <columns>
+            <TableColumn fx:id="col_cont" prefWidth="322.0" text="Comment" />
+            <TableColumn fx:id="col_date1" prefWidth="113.0" text="Date" />
+            <TableColumn fx:id="col_likes1" prefWidth="72.0" text="Likes" />
+            <TableColumn fx:id="col_user" prefWidth="45.0" text="User" />
+            <TableColumn fx:id="Idp" prefWidth="79.0" text="Related Post" />
+         </columns>
+      </TableView>
+      <TableView fx:id="pstview" layoutX="556.0" layoutY="319.0" onSort="#PostTABLE" prefHeight="269.0" prefWidth="713.0" style="-fx-border-color: grey;">
+         <columns>
+            <TableColumn fx:id="col_post" prefWidth="223.0" text="Posts" />
+            <TableColumn fx:id="nbcmt" minWidth="0.0" prefWidth="44.0" text="nbcmt" />
+            <TableColumn fx:id="col_views" minWidth="0.0" prefWidth="170.0" text="views" />
+            <TableColumn fx:id="col_likes" text="likes" />
+            <TableColumn fx:id="col_report" prefWidth="50.0" text="report" />
+            <TableColumn fx:id="col_date" minWidth="0.0" prefWidth="66.0" text="Date" />
+            <TableColumn fx:id="id" prefWidth="75.0" text="idP" visible="false" />
+         </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+      <Button fx:id="btn_likeP" layoutX="639.0" layoutY="270.0" mnemonicParsing="false" onAction="#LikePost" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #616161; -fx-background-radius: 90;" text="  Like" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

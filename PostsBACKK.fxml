@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+
+      <TableView fx:id="postview" layoutX="279.0" layoutY="272.0" prefHeight="300.0" prefWidth="864.0" style="-fx-background-color: white; -fx-border-color: black; -fx-blend-mode: 5;">
+        <columns>
+          <TableColumn fx:id="contenuP" prefWidth="382.0" text="Contenu" />
+            <TableColumn fx:id="likes" prefWidth="34.0" text="Likes" />
+            <TableColumn fx:id="views" prefWidth="74.0" text="Views" />
+            <TableColumn fx:id="dateP" prefWidth="173.0" text="Date" />
+        </columns>
+         </TableView>
+      
+     </children> 
+</AnchorPane>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="303.0" fitWidth="568.0" layoutX="728.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/back3louta.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="656.0" prefWidth="158.0" style="-fx-background-color: #535355;" />
+      <ImageView fitHeight="266.0" fitWidth="363.0" layoutX="959.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/faza.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="319.0" fitWidth="555.0" layoutX="158.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/back2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="156.0" prefHeight="67.0" prefWidth="1122.0" style="-fx-background-color: #535355;">
+         <children>
+            <Label layoutX="978.0" layoutY="21.0" prefHeight="27.0" prefWidth="110.0" text="Hello User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="923.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/icons8_Person_32px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="13.0" prefHeight="42.0" prefWidth="316.0" text="Blogs " textFill="#eeeaea">
+               <font>
+                  <Font name="Arial" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="76.0" fitWidth="496.0" layoutX="-30.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/aaaa.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="21.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/icons8-chevron-right-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="12.0" prefHeight="42.0" prefWidth="171.0" text="Overview" textFill="#eeeaea">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+               <effect>
+                  <Glow>
+                     <input>
+                        <Shadow color="WHITE" height="0.0" radius="0.0" width="0.0" />
+                     </input>
+                  </Glow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="155.0" layoutY="-2.0" prefHeight="656.0" prefWidth="3.0" style="-fx-background-color: #FF0000;" />
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="14.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Home_32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="192.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="152.0" style="-fx-background-color: #535355;" text="      Overview" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Home_32px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="178.0" fitWidth="152.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/ALPHA4.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="236.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="Users" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Person_32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="282.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text=" Events" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8-event-64.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="330.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #535355;" text=" Orders" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Open_Envelope_32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="382.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="    Products" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8-product-32.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="435.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="         Suggestions" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="37.0" fitWidth="29.0" layoutX="7.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Xbox_Menu_32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="481.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="Blogs" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="6.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8-blog-32.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="525.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="    Settings" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="6.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Slider__32px.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="571.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #535355;" text="      Sign Out" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="7.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/icons8_Sign_Out_32px.png" />
+         </image>
+      </ImageView>
+      <Line endX="736.0" endY="165.0" layoutX="-19.0" layoutY="-98.0" startX="731.5000610351562" startY="744.5">
+         <effect>
+            <DropShadow height="31.26" radius="22.9425" spread="0.73" width="62.51" />
+         </effect></Line>
+      <Label layoutX="202.0" layoutY="221.0" prefHeight="60.0" prefWidth="198.0" text="Welcome to" textFill="#5b5b5b">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+         <effect>
+            <DropShadow color="#6b0606" height="53.62" radius="18.155" />
+         </effect>
+      </Label>
+      <Label layoutX="344.0" layoutY="267.0" prefHeight="67.0" prefWidth="226.0" text="Alpha Fitness" textFill="#e10000">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+         <effect>
+            <DropShadow height="53.62" radius="18.155" />
+         </effect>
+      </Label>
+      <Label layoutX="717.0" layoutY="317.0" prefHeight="37.0" prefWidth="210.0" style="-fx-background-color: grey;" text="About Alpha Fitness" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Line endX="731.5000610351562" endY="442.0" layoutX="-4.0" layoutY="-364.0" startX="731.5000610351562" startY="666.0">
+         <effect>
+            <DropShadow height="31.26" radius="22.9425" spread="0.73" width="62.51" />
+         </effect>
+      </Line>
+      <Line endX="731.5000610351562" endY="442.0" layoutX="-4.0" layoutY="-73.0" startX="731.5000610351562" startY="666.0">
+         <effect>
+            <DropShadow height="54.7" radius="28.802500000000002" spread="0.73" width="62.51" />
+         </effect>
+      </Line>
+      <Label alignment="CENTER" layoutX="902.0" layoutY="366.0" prefHeight="189.0" prefWidth="366.0" text="Alpha Fitness, Established in 2020. Alpha was made for the people who are interested in sports and love to attend sports' events. With us , you can find all what you are searching for about sports' events. All types of sports have their events. You can find also all the products that you need in each event, all you have to do is to go to our Products page . You can share with us all your experiences with our events in our Blogs. Go and have a look in our Events and you'll never regret it!" textFill="#282727" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow height="41.76" radius="15.19" />
+         </effect>
+      </Label>
+      <Label layoutX="178.0" layoutY="438.0" prefHeight="60.0" prefWidth="515.0" style="-fx-background-color: &lt;hite;" text="Alpha Fitness, together we will get there!">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+         <effect>
+            <DropShadow height="53.62" radius="18.155" />
+         </effect>
+         <textFill>
+            <LinearGradient endX="0.5047619047619047" endY="0.19047619047619047" startX="0.5047619047619047" startY="0.9095238095238095">
+               <stops>
+                  <Stop color="#262525" />
+                  <Stop color="#262525" offset="0.007662835249042145" />
+                  <Stop color="#262525" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="247.0" layoutX="459.0" layoutY="499.0" startX="-100.0">
+         <effect>
+            <DropShadow spread="0.65" />
+         </effect>
+      </Line>
+      <Line endX="247.0" layoutX="285.0" layoutY="439.0" startX="-100.0">
+         <effect>
+            <DropShadow spread="0.65" />
+         </effect>
+      </Line>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect> 
+</AnchorPane>
