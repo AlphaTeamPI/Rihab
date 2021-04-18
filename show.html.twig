@@ -1,0 +1,161 @@
+{% extends 'basef.html.twig' %}
+
+{% block title %}
+    <title>Alpha Fitness | Posts</title>
+{% endblock %}
+{#
+{% block Blogs %}
+    <div class="container py-lg-3">
+    <h1>Posts</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Idp</th>
+                <td>{{ post.idp }}</td>
+            </tr>
+            <tr>
+                <th>Contenup</th>
+                <td>{{ post.contenup }}</td>
+            </tr>
+            <tr>
+                <th>Nbcmt</th>
+                <td>{{ post.nbcmt }}</td>
+            </tr>
+            <tr>
+                <th>Views</th>
+                <td>{{ post.views }}</td>
+            </tr>
+            <tr>
+                <th>Likes</th>
+                <td>{{ post.likes }}</td>
+            </tr>
+            <tr>
+                <th>Report</th>
+                <td>{{ post.report }}</td>
+            </tr>
+            <tr>
+                <th>DateP</th>
+                <td>{{ post.dateP ? post.dateP|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Iduser</th>
+                <td>{{ post.iduser }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('posts_index') }}">back to list</a>
+
+    <a href="{{ path('posts_edit', {'idp': post.idp}) }}">edit</a>
+
+    {{ include('posts/_delete_form.html.twig') }}
+</div>
+{% endblock %}
+
+#}
+
+ {% block Blogs %}
+     <div class="row pt-md-3">
+     <div class="col-lg-9 col-md-10 mx-auto">
+     <div class="accordion" id="accordionExample">
+     <div class="subject-card mt-4">
+         <div class="subject-card-header p-0" id="headingOne">
+             <a href="#" class="card__title p-3 p-lg-4 collapsed d-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                aria-controls="collapseOne">
+                 <div class="row">
+                     <div class="col-md-5 subject-img">
+                         <img src="{{post.imgpost }}"style="height:5cm;width:5cm;" alt="">
+                     </div>
+                     <div class="col-md-7 subject-content mt-md-0 mt-4">
+                         <h3>{{ post.iduser }}</h3>
+                         <p><a  {{post.idp}} >{{ post.contenup }}</a>
+                             <span class="course-number"><span class="fa fa-comments-o" aria-hidden="true"></span> {{ post.nbcmt }}</span>
+                         <p {{ post.nbcmt }} </p>
+                         <span class="course-number"><span class="fa fa-heart" aria-hidden="true"></span> {{ post.likes }}</span>
+                         <p {{ post.likes }} </p>
+                         <span class="course-number"><span class="fa fa-eye" aria-hidden="true"></span> {{ post.views }}</span>
+                         <p {{ post.views }} </p>
+                         <span class="course-number"><span class="fa fa-comments-o" aria-hidden="true"></span> {{ post.report }}</span>
+                         <p {{ post.report }} </p>
+                         <span class="date"aria-hidden="true">
+								<label  rel="bookmark" class="entry-date">
+									{{ post.dateP | date }}
+								</label>
+
+							</span>
+
+                         <td>
+                             <a class="btn btn-primary " href="{{ path('posts_index') }}">back to list</a>
+
+                             <a class="btn btn-primary " href="{{ path('posts_edit', {'idp': post.idp}) }}">edit</a>
+
+                             <a class="btn btn-primary ", {{ include('posts/_delete_form.html.twig')}} </a>
+                         </td>
+
+                     </div>
+                 </div>
+                 <span class="collapsed">
+                  Show More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </span>
+                {#  <span class="expanded">
+                  Show Less <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </span> #}
+             </a>
+
+         </div>
+
+         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+             <div class="card-body p-3 p-lg-4">
+                 <div class="row">
+                     <div class="col-md-6 pr-md-4">
+                         <div class="course-details">
+                             <h4>Why Study with Us?</h4>
+                             <ul>
+                                 <li><img src="{{ asset("Front/images/check.png")}}" alt="tick"> overall student-athelete GPA for Spring 2020</li>
+                                 <li><img src="{{ asset("Front/images/check.png")}}" alt="tick"> bachelor's recipients were employed or both within six months of</li>
+                                 <li><img src="{{ asset("Front/images/check.png")}}" alt="tick"> gradueates hold a position related to their degree or career objective</li>
+                             </ul>
+                         </div>
+                         <div class="course-details mt-5">
+                             <h4>Subject features:</h4>
+                             <ol>
+                                 <li>overall student-athelete GPA for Spring 2020</li>
+                                 <li>bachelor's recipients were employed or both within six months of</li>
+                                 <li>gradueates hold a position related to their degree or career objective</li>
+                                 <li>overall student-athelete GPA for Spring 2020</li>
+                                 <li>bachelor's recipients were employed or both within six months of</li>
+                                 <li>gradueates hold a position related to their degree or career objective</li>
+                             </ol>
+                         </div>
+                         <div class="course-details mt-5">
+                             <h4>Subject overview:</h4>
+                             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi fuga natus quis velit tenetur,
+                                 consectetur, temporibus ea quasi repellendus doloremque sit magnam dignissimos ut!</p>
+                             <a class="btn btn-light" href="courses.html">View all Courses</a>
+                         </div>
+                     </div>
+                     <div class="col-md-6 pl-md-4 mt-md-0 mt-5">
+                         <div class="course-details">
+                             <h4>Subject overview:</h4>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi fuga natus quis velit tenetur, consectetur,
+                                 temporibus ea quasi repellendus doloremque sit magnam dignissimos ut!</p>
+                             <img src="{{ asset("Front/images/banner.jpg")}}" class="img-fluid img-curve my-3" alt="" />
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                         <div class="course-details mt-5">
+                             <h4>Subject benefits:</h4>
+                             <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit perferendis dignissimos!</p>
+                             <ol>
+                                 <li>overall student-athelete GPA for Spring 2020</li>
+                                 <li>bachelor's recipients were employed or both within six months of</li>
+                                 <li>gradueates hold a position related to their degree or career objective</li>
+                                 <li>overall student-athelete GPA for Spring 2020</li>
+                             </ol>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ {% endblock %}
