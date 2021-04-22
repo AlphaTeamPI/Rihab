@@ -67,8 +67,14 @@
                                                    <p class="mt-3 mb-lg-5 mb-4">Start one of our 1000 high quality sports from the world’s leading events today!</p>
 
                                                        <a href="{{ path('posts_new')}}" class="btn btn-primary theme-button mb-2">Add post</a>
+                                                                      {# SORT BY DATE#}
+                                                   <form role="search" id="nav-search-form" method="post" action="{{ path('triP') }}"> {#bouton tri#}
 
-
+                                                       <a class="js-programmatic-set-val btn btn-outline-primary mr-1 mb-1">
+                                                       Trending
+                                                   </a>
+                                                   </form>
+                                                                      {# END DATEEEE #}
                                                </div>
                                            </div>
                                            <div class="clear"></div>
@@ -77,6 +83,11 @@
 
                                </div>
                                {% endblock %}
+
+
+
+
+
     {#    <div class="=vote">
             <div class="vote_bar">
                 <div class="vote_progress"></div>

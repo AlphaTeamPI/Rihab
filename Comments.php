@@ -27,14 +27,14 @@ class Comments
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idc;
+    private $id;
+    /*******************************************************************************/
 
     /**
-     * @var integer
      *
-     * @ORM\Column(name="idP", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="Posts",inversedBy="comments")
      */
-    private $idp;
+    private $post;
 
     /**
      * @var string
@@ -79,28 +79,22 @@ class Comments
     }
 
     /**
-     * Set idp
-     *
-     * @param integer $idp
-     *
-     * @return Comments
+     * @return mixed
      */
-    public function setIdp($idp)
+    public function getPost()
     {
-        $this->idp = $idp;
-
-        return $this;
+        return $this->post;
     }
 
     /**
-     * Get idp
-     *
-     * @return integer
+     * @param mixed $post
      */
-    public function getIdp()
+    public function setPost($post): void
     {
-        return $this->idp;
+        $this->post = $post;
     }
+
+
 
     /**
      * Set contenuc

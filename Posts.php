@@ -22,7 +22,7 @@ class Posts
      * @ORM\GeneratedValue(strategy="IDENTITY")
      * @ORM\Column(name="idp",type="integer",length=255,nullable=true)
      */
-    private $idp;
+    private $id;
 
 
     /**
@@ -71,7 +71,7 @@ class Posts
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateP", type="datetime", nullable=true, options={"default"="NULL"})
+     * @ORM\Column(name="dateP", type="datetime", nullable=true)
      */
     private $dateP;
     /**
@@ -80,8 +80,26 @@ class Posts
      */
     private $iduser;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Comments",mappedBy="Post")
+     */
+    private $comments;
 
+    /**
+     * @return mixed
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
 
+    /**
+     * @param mixed $comments
+     */
+    public function setComments($comments): void
+    {
+        $this->comments = $comments;
+    }
     /**
      * Get idp
      *

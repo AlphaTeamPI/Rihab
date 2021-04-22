@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Comments;
 use App\Entity\Posts;
 use App\Form\Posts1Type;
 use App\Repository\PostsRepository;
@@ -52,11 +53,11 @@ class PostsController extends AbstractController
 
 
 
-
+            $date= new \DateTime();
+            $post->setDateP($date);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($post);
             $entityManager->flush();
-            $post->setDatep(new \DateTime('now'));
             return $this->redirectToRoute('posts_index');
         }
 
@@ -87,10 +88,13 @@ class PostsController extends AbstractController
 
         $post=$repository->find($idp);
         $post->setViews($post->getViews()+1);
+        $repository1=$this->getDoctrine()->getRepository(Comments::class);
+        $comments= $repository1->findBy(['Post'=>$post]);
         $this->getDoctrine()->getManager()->persist($post);
         $this->getDoctrine()->getManager()->flush();
         return $this->render('postsF/show.html.twig', [
             'post' => $post,
+            'comment'=>$comments
         ]);
     }
 
@@ -212,7 +216,7 @@ class PostsController extends AbstractController
 
         $rep = $query->getResult();
 
-        return $this->render('PostsF/show.html.twig',
+        return $this->render('PostsF/index.html.twig',
             array('post' => $rep));
 
     }
